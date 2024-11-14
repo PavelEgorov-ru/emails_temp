@@ -1,0 +1,44 @@
+mixin card(card, utm, size)
+  if size==4
+    <!--[if (gte mso 9)|(IE)]> <td width="192" valign="top" align="center" style="padding:0;" > <![endif]-->
+      div(class="column" style="width:100%; max-width:144px; display:inline-block; vertical-align:top;")
+        table(class="product" width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse;")
+          tr 
+            td(align="center" style="padding:12px 4px 8px;")
+              table(cellpadding="0" cellspacing="0" style="border-collapse: collapse; width:100%; text-align:center;")
+                tr
+                  td(align="center" style="padding:0px; font-size: 0;")
+                    a(href="https://www.sima-land.ru/"+card.url+utm target="_blank" style="text-decoration:none;")
+                      img(src=card.img alt=card.name style="border-width:0; width:100%; height:auto; border-radius: 4px;")
+                tr 
+                  td(align="center" style="padding:8px 0px 4px 0px; font-family: Arial, sans-serif; color:#212121; font-size: 14px; line-height: 20px;")
+                    a(class="product__link" href="https://www.sima-land.ru/"+card.url+utm target="_blank" style="color:#212121 !important; text-decoration:underline;")
+                      span(style="font-family: Arial, sans-serif; color:#212121; font-size: 14px; line-height: 20px;") !{card.name}
+                if card.price
+                  tr 
+                    td(align="center" style="padding:4px 0px 4px 0px; font-family: Arial, sans-serif; color:#212121; font-size: 16px; line-height: 20px; font-weight: bold;")
+                      span(style="font-family: Arial, sans-serif; color:#212121; font-size: 16px; line-height: 20px; font-weight: bold;")
+                        span(class="price__total") !{card.price}
+                        span='\u20bd'
+  else
+    <!--[if (gte mso 9)|(IE)]> <td width="50%" valign="top" align="center" style="padding:0;" > <![endif]-->
+      div(class="column" style="width:100%; max-width:288px; display:inline-block; vertical-align:top;")
+        table(class="product" width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse;")
+          tr 
+            td(align="center" style="padding:12px 4px 8px;")
+              table(width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width:100%; text-align:center;")
+                tr
+                  td(align="center" style="padding:0px; font-size: 0;")
+                    a(href="https://www.sima-land.ru/"+card.url+utm target="_blank" style="text-decoration:none;")
+                      img(src=card.img alt=card.name style="border-width:0; max-width: 280px; height:auto; border-radius: 4px;")
+                tr 
+                  td(align="center" style="padding:8px 0px 4px 0px; font-family: Arial, sans-serif; color:#212121; font-size: 14px; line-height: 20px;")
+                    a(class="product__link" href="https://www.sima-land.ru/"+card.url+utm target="_blank" style="color:#212121 !important; text-decoration:underline;")
+                      span(style="font-family: Arial, sans-serif; color:#212121; font-size: 14px; line-height: 20px;") !{card.name}
+                if card.price
+                  tr 
+                    td(align="center" style="padding:4px 0px 4px 0px; font-family: Arial, sans-serif; color:#212121; font-size: 16px; line-height: 20px; font-weight: bold;")
+                      span(style="font-family: Arial, sans-serif; color:#212121; font-size: 16px; line-height: 20px; font-weight: bold;")
+                        span(class="price__total") !{card.price}
+                        span='\u20bd'
+    <!--[if (gte mso 9)|(IE)]></td><![endif]-->

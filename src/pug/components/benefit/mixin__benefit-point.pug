@@ -1,0 +1,16 @@
+mixin benefit-point(point)
+  <!--[if (gte mso 9)|(IE)]><td width="25%" valign="top" align="center" style="padding:0px;"><![endif]-->
+  div(class="column" style="width:100%; max-width:140px; display:inline-block; vertical-align:top;")
+    table(align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width:100%;")
+      tr 
+        td(align="center" style="padding:4px;")
+          table(align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width:100%;")
+            tr
+              td(align="center" valign="top" style="padding: 8px 0px; font-size:0px;")
+                a(href=point.url target="_blank" style="text-decoration: none;")
+                  img(src=point.img style="border-width:0; width:60px; height:60px;" alt=point.text)
+            tr 
+              td(align="center" valign="middle" style="padding: 0px; font-family: Arial, sans-serif; font-size:14px; line-height: 16px;")
+                a(href=point.url target="_blank" style="text-decoration: none; color:#212121 !important;")
+                  span(style="font-family: Arial, sans-serif; font-size:14px; color:#212121; line-height: 16px;") !{point.text} 
+                    
