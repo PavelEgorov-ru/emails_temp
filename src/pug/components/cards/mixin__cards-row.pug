@@ -1,4 +1,4 @@
-mixin cards-row(data, utm, size)
+mixin cards-row(data, utm, size, campain)
   tr
     td(class=size==4?"four-column":"three_column_280" align="center" style="padding: 0px 12px 0px 12px; font-size:0;")
       <!--[if (gte mso 9)|(IE)]> <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse;font-family:sans-serif;"> <![endif]-->
@@ -6,7 +6,7 @@ mixin cards-row(data, utm, size)
       include ./mixin__card.pug 
       if data.row.length > 0
         each card in data.row
-          +card(card, utm, size)
+          +card(card, utm, size,campain)
       else 
         span=data.row.length
       <!--[if (gte mso 9)|(IE)]> </tr> <![endif]-->
