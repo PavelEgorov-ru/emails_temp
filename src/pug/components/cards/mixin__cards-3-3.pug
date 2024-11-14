@@ -1,4 +1,4 @@
-mixin cards-3-6(cards, utm)
+mixin cards-3-6(cards, utm, campain)
   tr 
     td(class="three_column_184" align="center" style="padding: 0px 12px 0px 12px; font-size:0;")
       <!--[if (gte mso 9)|(IE)]> <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse;font-family:sans-serif;"> <tr> <td width="192" valign="top" align="center" style="padding:0px;"> <![endif]-->
@@ -10,16 +10,18 @@ mixin cards-3-6(cards, utm)
                 tr
                   td(align="center" style="padding:0px; font-size: 0;")
                     a(href="https://www.sima-land.ru/"+cards[0].url+utm target="_blank" style="text-decoration:none;")
-                      img(src="https://rassylka.static1-sima-land.com/ftp_rassylka/024249774/1.jpg" alt=cards[0].name style="border-width:0;width:100%;height:auto;border-radius:4px;")
+                      img(src="https://rassylka.static1-sima-land.com/ftp_rassylka/"+campain+cards[0].img alt=cards[0].name style="border-width:0;width:100%;height:auto;border-radius:4px;")
+                if cards[0].name
                 tr 
                   td(align="center" style="padding:8px 0px 4px 0px; font-family: Arial, sans-serif; color:#212121; font-size: 14px; line-height: 20px;")
                     a(class="product__link" href="https://www.sima-land.ru/"+cards[0].url+utm target="_blank" style="color:#212121 !important; text-decoration:underline;")
                       span(style="font-family: Arial, sans-serif; color:#212121; font-size: 14px; line-height: 20px;") !{cards[0].name}
-                tr 
-                  td(align="center" style="padding:4px 0px 4px 0px; font-family: Arial, sans-serif; color:#212121; font-size: 16px; line-height: 20px; font-weight: bold;")
-                    span(style="font-family: Arial, sans-serif; color:#212121; font-size: 16px; line-height: 20px; font-weight: bold;")
-                      span(class="price__total") !{cards[0].price}
-                      span='\u20bd'
+                if cards[0].price
+                  tr 
+                    td(align="center" style="padding:4px 0px 4px 0px; font-family: Arial, sans-serif; color:#212121; font-size: 16px; line-height: 20px; font-weight: bold;")
+                      span(style="font-family: Arial, sans-serif; color:#212121; font-size: 16px; line-height: 20px; font-weight: bold;")
+                        span(class="price__total") !{cards[0].price}
+                        span='\u20bd'
       <!--[if (gte mso 9)|(IE)]> </td> <td width="192" valign="top" align="center" style="padding:0;" > <![endif]-->
       div(class="column" style="width:100%; max-width:192px; display:inline-block; vertical-align:top;")
         table(class="product" align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width:100%;")
@@ -29,16 +31,18 @@ mixin cards-3-6(cards, utm)
                 tr
                   td(align="center" style="padding:0px; font-size: 0;")
                     a(href="https://www.sima-land.ru/"+cards[1].url+utm target="_blank" style="text-decoration:none;")
-                      img(src="https://rassylka.static1-sima-land.com/ftp_rassylka/024249774/1.jpg" alt=cards[1].name style="border-width:0;width:100%;height:auto;border-radius:4px;")
+                      img(src="https://rassylka.static1-sima-land.com/ftp_rassylka/"+campain+cards[1].img alt=cards[1].name style="border-width:0;width:100%;height:auto;border-radius:4px;")
+                if cards[1].name
                 tr 
                   td(align="center" style="padding:8px 0px 4px 0px; font-family: Arial, sans-serif; color:#212121; font-size: 14px; line-height: 20px;")
                     a(class="product__link" href="https://www.sima-land.ru/"+cards[1].url+utm target="_blank" style="color:#212121 !important; text-decoration:underline;")
                       span(style="font-family: Arial, sans-serif; color:#212121; font-size: 14px; line-height: 20px;") !{cards[1].name}
-                tr 
-                  td(align="center" style="padding:4px 0px 4px 0px; font-family: Arial, sans-serif; color:#212121; font-size: 16px; line-height: 20px; font-weight: bold;")
-                    span(style="font-family: Arial, sans-serif; color:#212121; font-size: 16px; line-height: 20px; font-weight: bold;")
-                      span(class="price__total") !{cards[1].price}
-                      span='\u20bd'
+                if cards[1].price
+                  tr 
+                    td(align="center" style="padding:4px 0px 4px 0px; font-family: Arial, sans-serif; color:#212121; font-size: 16px; line-height: 20px; font-weight: bold;")
+                      span(style="font-family: Arial, sans-serif; color:#212121; font-size: 16px; line-height: 20px; font-weight: bold;")
+                        span(class="price__total") !{cards[1].price}
+                        span='\u20bd'
       <!--[if (gte mso 9)|(IE)]> </td> <td width="192" valign="top" align="center" style="padding:0;" > <![endif]-->
       div(class="column" style="width:100%; max-width:192px; display:inline-block; vertical-align:top;")
         table(class="product" align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width:100%;")
@@ -48,16 +52,18 @@ mixin cards-3-6(cards, utm)
                 tr
                   td(align="center" style="padding:0px; font-size: 0;")
                     a(href="https://www.sima-land.ru/"+cards[2].url+utm target="_blank" style="text-decoration:none;")
-                      img(src="https://rassylka.static1-sima-land.com/ftp_rassylka/024249774/1.jpg" alt=cards[2].name style="border-width:0;width:100%;height:auto;border-radius:4px;")
+                      img(src="https://rassylka.static1-sima-land.com/ftp_rassylka/"+campain+cards[2].img alt=cards[2].name style="border-width:0;width:100%;height:auto;border-radius:4px;")
+                if cards[2].name
                 tr 
                   td(align="center" style="padding:8px 0px 4px 0px; font-family: Arial, sans-serif; color:#212121; font-size: 14px; line-height: 20px;")
                     a(class="product__link" href="https://www.sima-land.ru/"+cards[2].url+utm target="_blank" style="color:#212121 !important; text-decoration:underline;")
                       span(style="font-family: Arial, sans-serif; color:#212121; font-size: 14px; line-height: 20px;") !{cards[2].name}
-                tr 
-                  td(align="center" style="padding:4px 0px 4px 0px; font-family: Arial, sans-serif; color:#212121; font-size: 16px; line-height: 20px; font-weight: bold;")
-                    span(style="font-family: Arial, sans-serif; color:#212121; font-size: 16px; line-height: 20px; font-weight: bold;")
-                      span(class="price__total") !{cards[2].price}
-                      span='\u20bd'
+                if cards[2].price
+                  tr 
+                    td(align="center" style="padding:4px 0px 4px 0px; font-family: Arial, sans-serif; color:#212121; font-size: 16px; line-height: 20px; font-weight: bold;")
+                      span(style="font-family: Arial, sans-serif; color:#212121; font-size: 16px; line-height: 20px; font-weight: bold;")
+                        span(class="price__total") !{cards[2].price}
+                        span='\u20bd'
       <!--[if (gte mso 9)|(IE)]> </td> </tr> </table> <![endif]-->
 
 
