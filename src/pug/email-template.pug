@@ -13,68 +13,15 @@ block content
       include ./components/heading/heading.pug 
         block heading 
           include ./components/heading/mixin__heading.pug
-          +head(data.head_1)
-      include ./components/cards/mixin__cards-row.pug
-      if data.cards_1.length > 0
-        each cards in data.cards_1
-          +cards-row(cards, data.utm, data.size, data.campain)
-      include ./components/button/button.pug 
-        block button
-          include ./components/button/mixin__button.pug
-          +button(data.promoUrl, data.utm, data.button_1)
-      include ./components/heading/heading.pug 
-        block heading 
-          include ./components/heading/mixin__heading.pug
-          +head(data.head_2)
-      include ./components/cards/mixin__cards-row.pug
-      if data.cards_2.length > 0
-        each cards in data.cards_2
-          +cards-row(cards, data.utm, data.size, data.campain)
-      include ./components/button/button.pug 
-        block button
-          include ./components/button/mixin__button.pug
-          +button(data.promoUrl, data.utm, data.button_2)
-      include ./components/heading/heading.pug 
-        block heading 
-          include ./components/heading/mixin__heading.pug
-          +head(data.head_3)
-      include ./components/cards/mixin__cards-row.pug
-      if data.cards_3.length > 0
-        each cards in data.cards_3
-          +cards-row(cards, data.utm, data.size, data.campain)
-      include ./components/button/button.pug 
-        block button
-          include ./components/button/mixin__button.pug
-          +button(data.promoUrl, data.utm, data.button_3)
-      include ./components/heading/heading.pug 
-        block heading 
-          include ./components/heading/mixin__heading.pug
-          +head(data.head_4)
-      include ./components/cards/mixin__cards-row.pug
-      if data.cards_4.length > 0
-        each cards in data.cards_4
-          +cards-row(cards, data.utm, data.size, data.campain)
-      include ./components/button/button.pug 
-        block button
-          include ./components/button/mixin__button.pug
-          +button(data.promoUrl, data.utm, data.button_4)
-      include ./components/divider/divider.pug
+          +head(data.head)
       include ./components/cards/mixin__cards-row.pug
       if data.cards.length > 0
         each cards in data.cards
           +cards-row(cards, data.utm, data.size, data.campain)
-      include ./components/cards/mixin__cards-row.pug
-      if data.cards.length > 0
-        each cards in data.cards_5
-          +cards-row(cards, data.utm, data.size, data.campain)
-      include ./components/cards/mixin__cards-3-6.pug 
-      +cards-3-6(data.cards_3_6, data.utm, data.campain)
-      include ./components/cards/mixin__cards-3-3.pug 
-      +cards-3-6(data.cards_3_3, data.utm, data.campain)
-      //- include ./components/button/button.pug 
-      //-   block button
-      //-     include ./components/button/mixin__button.pug
-      //-     +button(data.promoUrl, data.utm, data.button)
+      include ./components/button/button.pug 
+        block button
+          include ./components/button/mixin__button.pug
+          +button(data.promoUrl, data.utm, data.button)
   include ./components/space/space.pug
   include ./components/benefit/benefit.pug
   include ./components/space/space.pug
