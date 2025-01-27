@@ -16,6 +16,9 @@ block content
           when 'cards-3-6'
             include ./components/cards/mixin__cards-3-6.pug 
             +cards-3-6(section.data, data.utm, data.campain)
+          when 'cards-3-3'
+            include ./components/cards/mixin__cards-3-3.pug 
+            +cards-3-6(section.data, data.utm, data.campain)
   include ./components/space/space.pug
   include ./components/benefit/benefit.pug
   include ./components/space/space.pug
