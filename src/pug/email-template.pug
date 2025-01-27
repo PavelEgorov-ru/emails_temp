@@ -6,14 +6,16 @@ block content
   include ./components/banner/banner.pug
   include ./components/body/body.pug
     block body
-      include ./components/cards/mixin__cards-3-6.pug 
-      +cards-3-6(data.cards_1, data.utm, data.campain)
-      include ./components/cards/mixin__cards-3-6.pug 
-      +cards-3-6(data.cards_2, data.utm, data.campain)
-      include ./components/button/button.pug 
-        block button
-          include ./components/button/mixin__button.pug
-          +button(data.promoUrl, data.utm, data.button)
+      each section in data.content
+        case section.type
+          when 'button'
+            include ./components/button/button.pug 
+              block button
+                include ./components/button/mixin__button.pug
+                +button(data.promoUrl, data.utm, section.data)
+          when 'cards-3-6'
+            include ./components/cards/mixin__cards-3-6.pug 
+            +cards-3-6(section.data, data.utm, data.campain)
   include ./components/space/space.pug
   include ./components/benefit/benefit.pug
   include ./components/space/space.pug
