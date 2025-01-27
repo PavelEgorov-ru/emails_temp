@@ -10,33 +10,47 @@ block variables
       promoBanner: '/0000.png',
       promoBanner_2: '/1111.png',
       size: 3,
-      //- text: {
-      //-   align: 'center',
-      //-   color: 'color: #212121;',
-      //-   value: 'Представляем широкий ассортимент лент, которые можно использовать в шитье, рукоделии и оформлении подарков. Выбирайте!',
-      //- },
-      button: { 
-        text: 'Смотреть всё',
-        color: 'color: #ffffff;',
-        bgColor: '#1f84db',
-        size:'width:149px',
-      },
-      cards_1: [
-        {name: 'роскошная акварель', url: 'series/novogodnyaya-seriya-roskoshnaya-akvarel/?mode=infinite&per-page=50&sort=-date&viewtype=cards&', img: '/1.png'},
-        {name: 'бело-золотой', url: 'series/zolotaya-seriya-belo-zolotoy/?mode=infinite&per-page=50&sort=-date&viewtype=xxl&', img: '/2.png'},
-        {name: 'любимый праздник', url: 'series/lyubimyy-prazdnik/?f=%7B%22trademark%22%3A%5B%223983%22%5D%7D&sort=-date&viewtype=cards&', img: '/3.png'},
-        {name: 'пастельная классика', url: 'series/zolotaya-seriya-pastelnaya-klassika/?mode=infinite&per-page=50&sort=-date&viewtype=xxl&', img: '/4.png'},
-        {name: 'белая сказка', url: 'series/zolotaya-seriya-belaya-skazka/?mode=infinite&per-page=50&sort=-date&viewtype=xxl&', img: '/5.png'},
-        {name: 'мандариновое настроение', url: 'series/mandarinovoe-nastroenie/?mode=infinite&per-page=50&sort=-date&viewtype=xxl&', img: '/6.png'},
-      ],
-      cards_2: [
-        {name: 'белая', url: 'series/zolotaya-kollekciya-belaya/?mode=infinite&per-page=50&sort=-date&viewtype=xxl&', img: '/7.png'},
-        {name: 'ретро почта', url: 'series/novogodnyaya-retro-pochta/?mode=infinite&per-page=50&sort=-date&viewtype=xxl&', img: '/8.png'},
-        {name: 'синяя сказка', url: 'series/zolotaya-seriya-sinyaya-skazka/?', img: '/9.png'},
-        {name: 'подарок от деда мороза', url: 'series/kollekciya-upakovki-podarok-ot-deda-moroza/?mode=infinite&per-page=50&sort=-date&viewtype=xxl&', img: '/10.png'},
-        {name: 'аромат праздника', url: 'series/aromat-prazdnika/?sort=-date&viewtype=cards&', img: '/11.png'},
-        {name: 'городские истории', url: 'series/kollekciya-gorodskie-istorii/?sort=-date&viewtype=cards&', img: '/12.png'},
-      ],
+      content: [
+        {
+          type: 'text',
+          data: {
+            align: 'center',
+            color: 'color: #212121;',
+            value: 'Представляем широкий ассортимент лент, которые можно использовать в шитье, рукоделии и оформлении подарков. Выбирайте!',
+          }
+        },
+        {
+          type: 'button',
+          data: {
+            text: 'Смотреть всё',
+            color: 'color: #ffffff;',
+            bgColor: '#1f84db',
+            size:'width:149px',
+          }
+        },
+        {
+          type: 'cards',
+          data: [
+            {name: 'роскошная акварель', url: 'series/novogodnyaya-seriya-roskoshnaya-akvarel/?mode=infinite&per-page=50&sort=-date&viewtype=cards&', img: '/1.png'},
+            {name: 'бело-золотой', url: 'series/zolotaya-seriya-belo-zolotoy/?mode=infinite&per-page=50&sort=-date&viewtype=xxl&', img: '/2.png'},
+            {name: 'любимый праздник', url: 'series/lyubimyy-prazdnik/?f=%7B%22trademark%22%3A%5B%223983%22%5D%7D&sort=-date&viewtype=cards&', img: '/3.png'},
+            {name: 'пастельная классика', url: 'series/zolotaya-seriya-pastelnaya-klassika/?mode=infinite&per-page=50&sort=-date&viewtype=xxl&', img: '/4.png'},
+            {name: 'белая сказка', url: 'series/zolotaya-seriya-belaya-skazka/?mode=infinite&per-page=50&sort=-date&viewtype=xxl&', img: '/5.png'},
+            {name: 'мандариновое настроение', url: 'series/mandarinovoe-nastroenie/?mode=infinite&per-page=50&sort=-date&viewtype=xxl&', img: '/6.png'},
+          ]
+        },
+        {
+          type: 'cards',
+          data: [
+            {name: 'белая', url: 'series/zolotaya-kollekciya-belaya/?mode=infinite&per-page=50&sort=-date&viewtype=xxl&', img: '/7.png'},
+            {name: 'ретро почта', url: 'series/novogodnyaya-retro-pochta/?mode=infinite&per-page=50&sort=-date&viewtype=xxl&', img: '/8.png'},
+            {name: 'синяя сказка', url: 'series/zolotaya-seriya-sinyaya-skazka/?', img: '/9.png'},
+            {name: 'подарок от деда мороза', url: 'series/kollekciya-upakovki-podarok-ot-deda-moroza/?mode=infinite&per-page=50&sort=-date&viewtype=xxl&', img: '/10.png'},
+            {name: 'аромат праздника', url: 'series/aromat-prazdnika/?sort=-date&viewtype=cards&', img: '/11.png'},
+            {name: 'городские истории', url: 'series/kollekciya-gorodskie-istorii/?sort=-date&viewtype=cards&', img: '/12.png'},
+          ],
+        },
+      ]
     }
 
   - 
