@@ -25,6 +25,9 @@ block content
           when 'cards-4'
             include ./components/cards/mixin__cards-row.pug 
             +cards-row(section.data, data.utm, section.size, data.campain)
+          when 'text'
+            include ./components/text/mixin__text.pug 
+            +text(section.data)
   include ./components/space/space.pug
   include ./components/benefit/benefit.pug
   include ./components/space/space.pug

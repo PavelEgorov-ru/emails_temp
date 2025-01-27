@@ -1,3 +1,4 @@
 mixin text(text)
-  td(align=text.align style="padding: 12px 16px 12px; font-family: Arial, sans-serif; font-size: 16px; line-height: 24px;"+text.color)
-       span(style="font-family: Arial, sans-serif; font-size: 16px; line-height: 24px;"+text.color)=text.value
+  tr
+    td(align=text.align style="padding: 12px 16px 12px; font-family: Arial, sans-serif; font-size: 16px; line-height: 24px;"+text.color)
+      span(style="font-family: Arial, sans-serif; font-size: 16px; line-height: 24px;"+text.color)=text.value
