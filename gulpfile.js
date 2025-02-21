@@ -19,6 +19,10 @@ gulp.task("pug", function () {
       .pipe(gulp.dest("dist"))
   ); // Сохранение в выходную папку
 });
+// как-то надо запустить это
+// gulp.task("pug1", function () {
+//   console.log("11111");
+// });
 
 // Задача для инлайна CSS
 // gulp.task("inline-css", function () {
